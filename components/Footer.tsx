@@ -25,7 +25,7 @@ export function Footer() {
             <div className="flex items-center space-x-2 mb-4">
               <div className="relative h-8 w-24 ml-0 flex items-center justify-center overflow-visible">
                 <Image
-                  src="/Tulsi Agro logo.png"
+                  src="/Tulsi Agro logo.webp"
                   alt="Tulsi Agro Logo"
                   width={32}
                   height={32}

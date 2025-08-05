@@ -40,14 +40,14 @@ export function Header({ currentPath }: HeaderProps) {
             {/* Logo */}
             <Link
               href="/"
-              className="flex items-center space-x-0 hover:opacity-80 transition-opacity"
+              className="flex items-center space-x-0 hover:opacity-80 transition-opacity focus:outline-none"
             >
               <Image
-                src="/Tulsi Agro logo.png"
+                src="/Tulsi Agro logo.webp"
                 alt="Tulsi Agro Logo"
                 width={32}
                 height={32}
-                className="h-8 w-20 object-contain"
+                className="h-16 w-24 object-contain -my-2"
               />
               <span className="text-xl lg:text-2xl font-bold text-green-800">
                 Tulsi Agro
@@ -58,7 +58,7 @@ export function Header({ currentPath }: HeaderProps) {
             <nav className="hidden lg:flex items-center space-x-8">
               <Link
                 href="/"
-                className={`text-base font-medium transition-colors hover:text-green-600 nav-hover-slide ${
+                className={`text-base font-medium transition-colors hover:text-green-600 nav-hover-slide focus:outline-none ${
                   currentPath === "/" ? "nav-active" : "text-green-700"
                 }`}
               >
@@ -66,7 +66,7 @@ export function Header({ currentPath }: HeaderProps) {
               </Link>
               <Link
                 href="/products"
-                className={`text-base font-medium transition-colors hover:text-green-600 nav-hover-slide ${
+                className={`text-base font-medium transition-colors hover:text-green-600 nav-hover-slide focus:outline-none ${
                   currentPath === "/products" ? "nav-active" : "text-green-700"
                 }`}
               >
@@ -74,7 +74,7 @@ export function Header({ currentPath }: HeaderProps) {
               </Link>
               <Link
                 href="/about"
-                className={`text-base font-medium transition-colors hover:text-green-600 nav-hover-slide ${
+                className={`text-base font-medium transition-colors hover:text-green-600 nav-hover-slide focus:outline-none ${
                   currentPath === "/about" ? "nav-active" : "text-green-700"
                 }`}
               >
@@ -82,7 +82,7 @@ export function Header({ currentPath }: HeaderProps) {
               </Link>
               <Link
                 href="/contact"
-                className={`text-base font-medium transition-colors hover:text-green-600 nav-hover-slide ${
+                className={`text-base font-medium transition-colors hover:text-green-600 nav-hover-slide focus:outline-none ${
                   currentPath === "/contact" ? "nav-active" : "text-green-700"
                 }`}
               >
@@ -94,13 +94,14 @@ export function Header({ currentPath }: HeaderProps) {
             <div className="hidden lg:flex items-center space-x-3">
               <Button
                 size="default"
-                className="bg-green-600 hover:bg-green-700 text-white btn-hover-glow active-scale text-base font-medium"
+                className="bg-green-600 hover:bg-green-700 text-white btn-hover-glow active-scale text-base font-medium focus:outline-none"
                 asChild
               >
                 <a
                   href={`https://wa.me/${whatsappNumber}?text=Hello! I'm interested in your agricultural services and grain products.`}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="focus:outline-none"
                 >
                   <MessageCircle className="h-5 w-5 mr-3" />
                   WhatsApp
@@ -109,10 +110,10 @@ export function Header({ currentPath }: HeaderProps) {
               <Button
                 size="default"
                 variant="outline"
-                className="border-green-600 text-green-600 hover:bg-green-50 btn-hover-border active-scale text-base font-medium"
+                className="border-green-600 text-green-600 hover:bg-green-50 btn-hover-border active-scale text-base font-medium focus:outline-none"
                 asChild
               >
-                <a href={`tel:${phoneNumber}`}>
+                <a href={`tel:${phoneNumber}`} className="focus:outline-none">
                   <Phone className="h-5 w-5 mr-3" />
                   Call Now
                 </a>
@@ -124,7 +125,7 @@ export function Header({ currentPath }: HeaderProps) {
               <Button
                 variant="ghost"
                 size="sm"
-                className="text-green-700 hover:text-green-600 hover:bg-green-50"
+                className="text-green-700 hover:text-green-600 hover:bg-green-50 focus:outline-none"
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               >
                 {isMobileMenuOpen ? (
@@ -165,7 +166,7 @@ export function Header({ currentPath }: HeaderProps) {
                   alt="Tulsi Agro Logo"
                   width={32}
                   height={32}
-                  className="h-8 w-16 object-contain logo-hover-pulse"
+                  className="h-10 w-20 object-contain logo-hover-pulse"
                 />
                 <span className="text-xl font-bold text-green-800 text-hover-glow">
                   Tulsi Agro
@@ -184,7 +185,7 @@ export function Header({ currentPath }: HeaderProps) {
             <nav className="p-6 space-y-4">
               <Link
                 href="/"
-                className={`block text-xl font-medium transition-colors hover:text-green-600 ${
+                className={`block text-xl font-medium transition-colors hover:text-green-600 focus:outline-none ${
                   currentPath === "/" ? "nav-active-mobile" : "text-green-700"
                 }`}
                 onClick={() => setIsMobileMenuOpen(false)}
@@ -193,7 +194,7 @@ export function Header({ currentPath }: HeaderProps) {
               </Link>
               <Link
                 href="/products"
-                className={`block text-xl font-medium transition-colors hover:text-green-600 ${
+                className={`block text-xl font-medium transition-colors hover:text-green-600 focus:outline-none ${
                   currentPath === "/products"
                     ? "nav-active-mobile"
                     : "text-green-700"
@@ -204,7 +205,7 @@ export function Header({ currentPath }: HeaderProps) {
               </Link>
               <Link
                 href="/about"
-                className={`block text-xl font-medium transition-colors hover:text-green-600 ${
+                className={`block text-xl font-medium transition-colors hover:text-green-600 focus:outline-none ${
                   currentPath === "/about"
                     ? "nav-active-mobile"
                     : "text-green-700"
@@ -215,7 +216,7 @@ export function Header({ currentPath }: HeaderProps) {
               </Link>
               <Link
                 href="/contact"
-                className={`block text-xl font-medium transition-colors hover:text-green-600 ${
+                className={`block text-xl font-medium transition-colors hover:text-green-600 focus:outline-none ${
                   currentPath === "/contact"
                     ? "nav-active-mobile"
                     : "text-green-700"
@@ -228,13 +229,14 @@ export function Header({ currentPath }: HeaderProps) {
 
             <div className="p-6 border-t border-green-100 space-y-3">
               <Button
-                className="w-full bg-green-600 hover:bg-green-700 text-white btn-hover-glow active-scale text-base font-medium"
+                className="w-full bg-green-600 hover:bg-green-700 text-white btn-hover-glow active-scale text-base font-medium focus:outline-none"
                 asChild
               >
                 <a
                   href={`https://wa.me/${whatsappNumber}?text=Hello! I'm interested in your agricultural services and grain products.`}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="focus:outline-none"
                 >
                   <MessageCircle className="h-5 w-5 mr-3" />
                   WhatsApp
@@ -242,10 +244,10 @@ export function Header({ currentPath }: HeaderProps) {
               </Button>
               <Button
                 variant="outline"
-                className="w-full border-green-600 text-green-600 hover:bg-green-50 btn-hover-border active-scale text-base font-medium"
+                className="w-full border-green-600 text-green-600 hover:bg-green-50 btn-hover-border active-scale text-base font-medium focus:outline-none"
                 asChild
               >
-                <a href={`tel:${phoneNumber}`}>
+                <a href={`tel:${phoneNumber}`} className="focus:outline-none">
                   <Phone className="h-5 w-5 mr-3" />
                   Call Now
                 </a>

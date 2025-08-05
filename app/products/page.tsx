@@ -14,7 +14,7 @@ const products = [
     id: 1,
     name: "Premium Wheat",
     category: "Wheat",
-    image: "/images/premium-wheat.jpg",
+    image: "/images/Products/Wheat product.webp",
     description:
       "High-quality wheat varieties perfect for flour mills, bakeries, and household consumption.",
     features: [
@@ -29,7 +29,7 @@ const products = [
     id: 2,
     name: "Basmati Rice 1121",
     category: "Rice",
-    image: "/images/basmati-1121.jpg",
+    image: "/images/Products/Basmati 1121.webp",
     description:
       "Premium long-grain basmati rice 1121 variety, perfect for export and premium food service.",
     features: ["Extra long grain", "Aromatic", "Aged rice", "Export quality"],
@@ -39,7 +39,7 @@ const products = [
     id: 3,
     name: "Basmati Rice 1718",
     category: "Rice",
-    image: "/images/basmati-1718.jpg",
+    image: "/images/Products/Basmati 1718.webp",
     description:
       "High-quality basmati rice 1718 variety with excellent cooking quality and aroma.",
     features: ["Long grain", "Aromatic", "Premium quality", "Good yield"],
@@ -49,7 +49,7 @@ const products = [
     id: 4,
     name: "Basmati Rice 1509",
     category: "Rice",
-    image: "/images/basmati-1509.jpg",
+    image: "/images/Products/Basmati 1509.webp",
     description:
       "Popular basmati rice 1509 variety known for its taste and cooking properties.",
     features: [
@@ -64,7 +64,7 @@ const products = [
     id: 5,
     name: "Punjabi Seeds Rice",
     category: "Rice",
-    image: "/images/punjabi-seeds-rice.jpg",
+    image: "/images/Products/Punjabi seeds rice.webp",
     description:
       "Traditional Punjabi seeds rice variety with excellent taste and nutritional value.",
     features: [
@@ -79,7 +79,7 @@ const products = [
     id: 6,
     name: "Sarbati Rice",
     category: "Rice",
-    image: "/images/sarbati-rice.jpg",
+    image: "/images/Products/Sarbarti Rice.webp",
     description:
       "Premium sarbati rice variety known for its excellent cooking quality and taste.",
     features: ["Premium quality", "Good cooking", "Aromatic", "Healthy choice"],
@@ -89,7 +89,7 @@ const products = [
     id: 7,
     name: "Chickpeas (Chana)",
     category: "Pulses",
-    image: "/images/chickpeas-chana.jpg",
+    image: "/images/Products/Chana.webp",
     description:
       "High-quality chickpeas perfect for various culinary applications and nutritional benefits.",
     features: ["High protein", "Nutritious", "Versatile", "Good quality"],
@@ -99,7 +99,7 @@ const products = [
     id: 8,
     name: "Mustard Seeds",
     category: "Oilseeds",
-    image: "/images/mustard-seeds.jpg",
+    image: "/images/Products/Mustard seeds.webp",
     description:
       "Premium quality mustard seeds perfect for oil extraction and culinary use.",
     features: [
@@ -114,7 +114,7 @@ const products = [
     id: 9,
     name: "Masoor Dal",
     category: "Pulses",
-    image: "/images/masoor-dal.jpg",
+    image: "/images/Products/Masoor dal.webp",
     description:
       "High-quality masoor dal (red lentils) perfect for various Indian dishes.",
     features: ["High protein", "Quick cooking", "Nutritious", "Popular choice"],
@@ -124,7 +124,7 @@ const products = [
     id: 10,
     name: "Bajra (Pearl Millet)",
     category: "Millets",
-    image: "/images/bajra-pearl-millet.jpg",
+    image: "/images/Products/Bajra.webp",
     description:
       "Traditional bajra millet known for its nutritional value and health benefits.",
     features: ["Gluten-free", "High fiber", "Nutritious", "Traditional"],
@@ -134,7 +134,7 @@ const products = [
     id: 11,
     name: "Jowar (Sorghum)",
     category: "Millets",
-    image: "/images/jowar-sorghum.jpg",
+    image: "/images/Products/jowar.webp",
     description:
       "Premium jowar (sorghum) perfect for traditional and modern culinary uses.",
     features: ["Gluten-free", "High protein", "Versatile", "Healthy"],
@@ -144,7 +144,7 @@ const products = [
     id: 12,
     name: "Peanuts (Groundnuts)",
     category: "Oilseeds",
-    image: "/images/peanuts-groundnuts.jpg",
+    image: "/images/Products/Moongfali.webp",
     description:
       "High-quality peanuts perfect for oil extraction and direct consumption.",
     features: ["High oil content", "Rich taste", "Versatile", "Popular"],
@@ -154,7 +154,7 @@ const products = [
     id: 13,
     name: "Sesame Seeds (Til)",
     category: "Oilseeds",
-    image: "/images/sesame-seeds-til.jpg",
+    image: "/images/Products/Seasame.webp",
     description:
       "Premium sesame seeds perfect for oil extraction and culinary applications.",
     features: [
@@ -169,7 +169,7 @@ const products = [
     id: 14,
     name: "Arhar Yellow Dal",
     category: "Pulses",
-    image: "/images/arhar-toor-dal.jpg",
+    image: "/images/Products/Arhar dal.webp",
     description:
       "High-quality arhar (toor) dal perfect for traditional Indian cooking.",
     features: ["High protein", "Traditional", "Nutritious", "Popular"],
@@ -179,7 +179,7 @@ const products = [
     id: 15,
     name: "Moong Dal",
     category: "Pulses",
-    image: "/images/moong-dal.jpg",
+    image: "/images/Products/Moong Dal.webp",
     description:
       "Premium moong dal perfect for various Indian dishes and sprouting.",
     features: ["High protein", "Easy digestible", "Versatile", "Healthy"],
@@ -189,7 +189,7 @@ const products = [
     id: 16,
     name: "Urad Dal (Black Lentils)",
     category: "Pulses",
-    image: "/images/urad-dal-black.jpg",
+    image: "/images/Products/Urad.webp",
     description:
       "High-quality urad dal perfect for traditional Indian dishes and fermentation.",
     features: ["High protein", "Traditional use", "Versatile", "Nutritious"],
@@ -199,7 +199,7 @@ const products = [
     id: 17,
     name: "Mahua Flower",
     category: "Specialty",
-    image: "/images/mahua-flower.jpg",
+    image: "/images/Products/Mahua.webp",
     description:
       "Traditional mahua flowers used for various purposes including food and medicinal applications.",
     features: [
@@ -247,7 +247,7 @@ export default function ProductsPage() {
             className="object-cover"
             priority={true}
           />
-          <div className="absolute inset-0"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-green-900/40 via-green-800/30 to-green-900/50"></div>
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center">
@@ -299,7 +299,7 @@ export default function ProductsPage() {
             {filteredProducts.map((product) => (
               <Card
                 key={product.id}
-                className="overflow-hidden product-card-hover"
+                className="overflow-hidden product-card-hover pt-0"
               >
                 <div className="relative h-48">
                   <Image
@@ -318,11 +318,11 @@ export default function ProductsPage() {
                   {/* Tulsi Agro Logo Badge */}
                   <div className="absolute top-3 right-3">
                     <Image
-                      src="/Tulsi Agro logo.png"
+                      src="/favicon-32x32.png"
                       alt="Tulsi Agro"
                       width={32}
                       height={32}
-                      className="h-8 w-8 object-contain logo-hover-pulse"
+                      className="h-6 w-6 object-contain logo-hover-pulse"
                     />
                   </div>
                 </div>

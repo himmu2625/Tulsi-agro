@@ -223,10 +223,10 @@ export default function HomePage() {
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-12">
-            <Card className="overflow-hidden product-card-hover">
+            <Card className="overflow-hidden product-card-hover pt-0">
               <div className="relative h-48">
                 <Image
-                  src="/images/premium-wheat.jpg"
+                  src="/images/Main-page/Wheat.webp"
                   alt="Premium Wheat - Wholesale grain supplier India"
                   fill
                   className="object-cover image-hover-zoom"
@@ -236,7 +236,7 @@ export default function HomePage() {
                 {/* Tulsi Agro Logo Badge */}
                 <div className="absolute top-3 right-3">
                   <Image
-                    src="/Tulsi Agro logo.png"
+                    src="/favicon-32x32.png"
                     alt="Tulsi Agro"
                     width={24}
                     height={24}
@@ -244,7 +244,7 @@ export default function HomePage() {
                   />
                 </div>
               </div>
-              <CardContent className="p-6">
+              <CardContent className="px-6 pb-6 pt-0">
                 <h3 className="text-xl font-semibold text-green-800 mb-2">
                   Premium Wheat
                 </h3>
@@ -273,10 +273,10 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            <Card className="overflow-hidden product-card-hover">
+            <Card className="overflow-hidden product-card-hover pt-0">
               <div className="relative h-48">
                 <Image
-                  src="/images/basmati-rice-varieties.jpg"
+                  src="/images/Main-page/Basmati-Rice.webp"
                   alt="Premium Basmati Rice 1121, 1718, 1509 - Wholesale rice supplier India"
                   fill
                   className="object-cover image-hover-zoom"
@@ -286,7 +286,7 @@ export default function HomePage() {
                 {/* Tulsi Agro Logo Badge */}
                 <div className="absolute top-3 right-3">
                   <Image
-                    src="/Tulsi Agro logo.png"
+                    src="/favicon-32x32.png"
                     alt="Tulsi Agro"
                     width={24}
                     height={24}
@@ -294,7 +294,7 @@ export default function HomePage() {
                   />
                 </div>
               </div>
-              <CardContent className="p-6">
+              <CardContent className="px-6 pb-6 pt-0">
                 <h3 className="text-xl font-semibold text-green-800 mb-2">
                   Premium Basmati Rice
                 </h3>
@@ -323,10 +323,10 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300 pt-0">
               <div className="relative h-48">
                 <Image
-                  src="/images/pulses-dal-varieties.jpg"
+                  src="/images/Main-page/Pulses and dal.webp"
                   alt="Wholesale Pulses and Dal varieties - Bulk grain supplier India"
                   fill
                   className="object-cover"
@@ -336,7 +336,7 @@ export default function HomePage() {
                 {/* Tulsi Agro Logo Badge */}
                 <div className="absolute top-3 right-3">
                   <Image
-                    src="/Tulsi Agro logo.png"
+                    src="/favicon-32x32.png"
                     alt="Tulsi Agro"
                     width={24}
                     height={24}
@@ -344,7 +344,7 @@ export default function HomePage() {
                   />
                 </div>
               </div>
-              <CardContent className="p-6">
+              <CardContent className="px-6 pb-6 pt-0">
                 <h3 className="text-xl font-semibold text-green-800 mb-2">
                   Pulses & Dal
                 </h3>

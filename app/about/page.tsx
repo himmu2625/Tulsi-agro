@@ -36,7 +36,7 @@ export default function AboutPage() {
             className="object-cover"
             priority={true}
           />
-          <div className="absolute inset-0"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-green-900/40 via-green-800/30 to-green-900/50"></div>
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center">
@@ -97,8 +97,8 @@ export default function AboutPage() {
             </div>
             <div className="relative">
               <Image
-                src="/images/about-tulsi-agro-chitrakoot.jpg"
-                alt="Tulsi Agro agricultural services in Chitrakoot - grain trading and farming"
+                src="/About section logo.png"
+                alt="Tulsi Agro Logo - About Section"
                 width={600}
                 height={500}
                 className="rounded-2xl shadow-xl"
