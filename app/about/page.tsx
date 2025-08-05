@@ -50,7 +50,7 @@ export default function AboutPage() {
               className="text-xl lg:text-2xl font-semibold text-white max-w-3xl mx-auto drop-shadow-md"
               style={{ textShadow: "1px 1px 3px rgba(22, 101, 52, 0.6)" }}
             >
-              Trusted agricultural services provider in Chitrakoot, Uttar
+              Trusted agricultural services provider based out in Chitrakoot, Uttar
               Pradesh. We specialize in quality grain trading, agricultural
               consulting, and farm-to-market solutions.
             </p>

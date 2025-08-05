@@ -103,9 +103,10 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
+          storageKey="tulsi-agro-theme"
         >
           <LoadingProvider>{children}</LoadingProvider>
         </ThemeProvider>

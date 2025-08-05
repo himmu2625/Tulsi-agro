@@ -44,13 +44,15 @@ export function Header({ currentPath }: HeaderProps) {
               className="flex items-center space-x-0 hover:opacity-80 transition-opacity focus:outline-none"
             >
               <Image
-                src="/Tulsi Agro logo.webp"
+                src="/Tulsi Agro logo.svg"
                 alt="Tulsi Agro Logo"
                 width={32}
                 height={32}
-                className="h-16 w-24 object-contain -my-2"
+                className="h-8 w-16 sm:h-12 sm:w-24 md:h-14 md:w-28 lg:h-16 lg:w-32 xl:h-16 xl:w-40 object-contain -my-2"
+                quality={100}
+                priority
               />
-              <span className="text-xl lg:text-2xl font-bold text-green-800 dark:text-green-300">
+              <span className="text-xl lg:text-2xl px-0 font-bold text-green-800 dark:text-green-300">
                 Tulsi Agro
               </span>
             </Link>
@@ -173,11 +175,11 @@ export function Header({ currentPath }: HeaderProps) {
             <div className="flex items-center justify-between p-6 border-b border-green-100 dark:border-green-800">
               <div className="flex items-center space-x-0">
                 <Image
-                  src="/Tulsi Agro logo.png"
+                  src="/Tulsi Agro logo.svg"
                   alt="Tulsi Agro Logo"
                   width={32}
                   height={32}
-                  className="h-10 w-20 object-contain logo-hover-pulse"
+                  className="h-8 w-16 sm:h-10 sm:w-20 object-contain logo-hover-pulse"
                 />
                 <span className="text-xl font-bold text-green-800 dark:text-green-300 text-hover-glow">
                   Tulsi Agro
