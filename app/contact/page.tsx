@@ -129,14 +129,14 @@ export default function ContactPage() {
                           Email
                         </h3>
                         <p className="text-green-600 mb-2">
-                          assisttulsiagrp@gmail.com
+                          assisttulsiagro@gmail.com
                         </p>
                         <Button
                           size="sm"
                           className="bg-green-600 hover:bg-green-700 btn-hover-glow active-scale"
                           asChild
                         >
-                          <a href="mailto:assisttulsiagrp@gmail.com">
+                          <a href="mailto:assisttulsiagro@gmail.com">
                             <Mail className="h-5 w-5 mr-2 icon-hover-bounce" />
                             Send Email
                           </a>
@@ -341,7 +341,7 @@ export default function ContactPage() {
                   className="w-full bg-green-600 hover:bg-green-700 text-white btn-hover-glow active-scale"
                   asChild
                 >
-                  <a href="mailto:assisttulsiagrp@gmail.com">
+                  <a href="mailto:assisttulsiagro@gmail.com">
                     <Mail className="h-5 w-5 mr-2 icon-hover-bounce" />
                     Send Email
                   </a>

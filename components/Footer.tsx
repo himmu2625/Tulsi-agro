@@ -130,7 +130,7 @@ export function Footer() {
                 📞 {phoneNumber}
               </div>
               <div className="link-hover-scale cursor-pointer">
-                📧 assisttulsiagrp@gmail.com
+                📧 assisttulsiagro@gmail.com
               </div>
               <div className="link-hover-scale cursor-pointer">
                 📍 Shop No: B. 13, Karwi Galla Mandi
