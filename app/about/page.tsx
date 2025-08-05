@@ -22,7 +22,7 @@ export default function AboutPage() {
   const phoneNumber = "+91 8810593717"
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-green-50 to-white dark:from-gray-900 dark:to-gray-800">
       <Header currentPath="/about" />
 
       {/* Hero Section */}
@@ -63,8 +63,10 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <h2 className="text-4xl font-bold text-green-800">Our Story</h2>
-              <div className="space-y-4 text-green-700 text-lg leading-relaxed">
+              <h2 className="text-4xl font-bold text-green-800 dark:text-green-300">
+                Our Story
+              </h2>
+              <div className="space-y-4 text-green-700 dark:text-green-300 text-lg leading-relaxed">
                 <p>
                   Established in the heart of Karwi Galla Mandi, Chitrakoot,
                   Tulsi Agro has been serving as a trusted agricultural services
@@ -121,18 +123,18 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-20 bg-green-50">
+      <section className="py-20 bg-green-50 dark:bg-gray-800">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12">
-            <Card className="border-green-200 shadow-lg">
+            <Card className="border-green-200 dark:border-gray-700 shadow-lg bg-white dark:bg-gray-800">
               <CardContent className="p-8">
-                <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Target className="h-10 w-10 text-green-600" />
+                <div className="w-20 h-20 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Target className="h-10 w-10 text-green-600 dark:text-green-400" />
                 </div>
-                <h3 className="text-xl font-semibold text-green-800 mb-3">
+                <h3 className="text-xl font-semibold text-green-800 dark:text-green-300 mb-3">
                   Our Mission
                 </h3>
-                <p className="text-green-600 text-sm lg:text-base">
+                <p className="text-green-600 dark:text-green-400 text-sm lg:text-base">
                   To provide premium quality agricultural products and services
                   that empower farmers, businesses, and consumers across India
                   with sustainable, reliable, and innovative solutions.
@@ -140,15 +142,15 @@ export default function AboutPage() {
               </CardContent>
             </Card>
 
-            <Card className="border-green-100 hover:shadow-lg transition-shadow">
+            <Card className="border-green-100 dark:border-gray-700 hover:shadow-lg transition-shadow bg-white dark:bg-gray-800">
               <CardContent className="p-6 lg:p-8 text-center">
-                <div className="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Heart className="h-10 w-10 text-yellow-600" />
+                <div className="w-20 h-20 bg-yellow-100 dark:bg-yellow-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Heart className="h-10 w-10 text-yellow-600 dark:text-yellow-400" />
                 </div>
-                <h3 className="text-xl font-semibold text-green-800 mb-3">
+                <h3 className="text-xl font-semibold text-green-800 dark:text-green-300 mb-3">
                   Our Vision
                 </h3>
-                <p className="text-green-600 text-sm lg:text-base">
+                <p className="text-green-600 dark:text-green-400 text-sm lg:text-base">
                   To become India&apos;s most trusted agricultural partner,
                   leading the transformation of agricultural commerce through
                   quality, innovation, and sustainable practices.
@@ -163,70 +165,70 @@ export default function AboutPage() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-green-800 mb-4">
+            <h2 className="text-4xl font-bold text-green-800 dark:text-green-300 mb-4">
               Our Core Values
             </h2>
-            <p className="text-xl text-green-600 max-w-2xl mx-auto">
+            <p className="text-xl text-green-600 dark:text-green-400 max-w-2xl mx-auto">
               The principles that guide everything we do at Tulsi Agro in
               serving the agricultural community of Chitrakoot.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <Card className="border-green-100 hover:shadow-lg transition-shadow">
+            <Card className="border-green-100 dark:border-gray-700 hover:shadow-lg transition-shadow bg-white dark:bg-gray-800">
               <CardContent className="p-6 lg:p-8 text-center">
-                <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Shield className="h-10 w-10 text-green-600" />
+                <div className="w-20 h-20 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Shield className="h-10 w-10 text-green-600 dark:text-green-400" />
                 </div>
-                <h3 className="text-xl font-semibold text-green-800 mb-3">
+                <h3 className="text-xl font-semibold text-green-800 dark:text-green-300 mb-3">
                   Quality First
                 </h3>
-                <p className="text-green-600 text-sm lg:text-base">
+                <p className="text-green-600 dark:text-green-400 text-sm lg:text-base">
                   Every product meets the highest standards of quality and
                   safety, ensuring customer satisfaction and trust.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="border-green-100 hover:shadow-lg transition-shadow">
+            <Card className="border-green-100 dark:border-gray-700 hover:shadow-lg transition-shadow bg-white dark:bg-gray-800">
               <CardContent className="p-6 lg:p-8 text-center">
-                <div className="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Users className="h-10 w-10 text-yellow-600" />
+                <div className="w-20 h-20 bg-yellow-100 dark:bg-yellow-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Users className="h-10 w-10 text-yellow-600 dark:text-yellow-400" />
                 </div>
-                <h3 className="text-xl font-semibold text-green-800 mb-3">
+                <h3 className="text-xl font-semibold text-green-800 dark:text-green-300 mb-3">
                   Customer Focus
                 </h3>
-                <p className="text-green-600 text-sm lg:text-base">
+                <p className="text-green-600 dark:text-green-400 text-sm lg:text-base">
                   Building lasting relationships through exceptional service,
                   transparency, and understanding customer needs.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="border-green-100 hover:shadow-lg transition-shadow">
+            <Card className="border-green-100 dark:border-gray-700 hover:shadow-lg transition-shadow bg-white dark:bg-gray-800">
               <CardContent className="p-6 lg:p-8 text-center">
-                <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Award className="h-10 w-10 text-green-600" />
+                <div className="w-20 h-20 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Award className="h-10 w-10 text-green-600 dark:text-green-400" />
                 </div>
-                <h3 className="text-xl font-semibold text-green-800 mb-3">
+                <h3 className="text-xl font-semibold text-green-800 dark:text-green-300 mb-3">
                   Excellence
                 </h3>
-                <p className="text-green-600 text-sm lg:text-base">
+                <p className="text-green-600 dark:text-green-400 text-sm lg:text-base">
                   Striving for excellence in every aspect of our business, from
                   product quality to customer service.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="border-green-100 hover:shadow-lg transition-shadow">
+            <Card className="border-green-100 dark:border-gray-700 hover:shadow-lg transition-shadow bg-white dark:bg-gray-800">
               <CardContent className="p-6 lg:p-8 text-center">
-                <div className="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Truck className="h-10 w-10 text-yellow-600" />
+                <div className="w-20 h-20 bg-yellow-100 dark:bg-yellow-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Truck className="h-10 w-10 text-yellow-600 dark:text-yellow-400" />
                 </div>
-                <h3 className="text-xl font-semibold text-green-800 mb-3">
+                <h3 className="text-xl font-semibold text-green-800 dark:text-green-300 mb-3">
                   Reliability
                 </h3>
-                <p className="text-green-600 text-sm lg:text-base">
+                <p className="text-green-600 dark:text-green-400 text-sm lg:text-base">
                   Consistent delivery, on-time service, and dependable support
                   that our customers can always count on.
                 </p>
@@ -237,19 +239,19 @@ export default function AboutPage() {
       </section>
 
       {/* Why Chitrakoot */}
-      <section className="py-20 bg-green-50">
+      <section className="py-20 bg-green-50 dark:bg-gray-800">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-green-800 mb-6">
+              <h2 className="text-4xl font-bold text-green-800 dark:text-green-300 mb-6">
                 Why Chitrakoot?
               </h2>
-              <Card className="border-green-200 shadow-lg">
+              <Card className="border-green-200 dark:border-gray-700 shadow-lg bg-white dark:bg-gray-800">
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold text-green-800 mb-6">
+                  <h3 className="text-2xl font-bold text-green-800 dark:text-green-300 mb-6">
                     Strategic Location
                   </h3>
-                  <div className="space-y-4 text-green-700">
+                  <div className="space-y-4 text-green-700 dark:text-green-300">
                     <p>
                       Chitrakoot is strategically located in the agricultural
                       belt of Uttar Pradesh, making it an ideal hub for grain
@@ -281,36 +283,44 @@ export default function AboutPage() {
 
             <div className="space-y-6">
               <div className="grid grid-cols-2 gap-6">
-                <Card className="text-center border-green-100">
+                <Card className="text-center border-green-100 dark:border-gray-700 bg-white dark:bg-gray-800">
                   <CardContent className="p-6">
-                    <div className="text-3xl font-bold text-green-800 mb-2">
+                    <div className="text-3xl font-bold text-green-800 dark:text-green-300 mb-2">
                       500+
                     </div>
-                    <div className="text-green-600">Happy Farmers</div>
+                    <div className="text-green-600 dark:text-green-400">
+                      Happy Farmers
+                    </div>
                   </CardContent>
                 </Card>
-                <Card className="text-center border-green-100">
+                <Card className="text-center border-green-100 dark:border-gray-700 bg-white dark:bg-gray-800">
                   <CardContent className="p-6">
-                    <div className="text-3xl font-bold text-green-800 mb-2">
+                    <div className="text-3xl font-bold text-green-800 dark:text-green-300 mb-2">
                       18+
                     </div>
-                    <div className="text-green-600">Grain Varieties</div>
+                    <div className="text-green-600 dark:text-green-400">
+                      Grain Varieties
+                    </div>
                   </CardContent>
                 </Card>
-                <Card className="text-center border-green-100">
+                <Card className="text-center border-green-100 dark:border-gray-700 bg-white dark:bg-gray-800">
                   <CardContent className="p-6">
-                    <div className="text-3xl font-bold text-green-800 mb-2">
+                    <div className="text-3xl font-bold text-green-800 dark:text-green-300 mb-2">
                       10+
                     </div>
-                    <div className="text-green-600">Years Experience</div>
+                    <div className="text-green-600 dark:text-green-400">
+                      Years Experience
+                    </div>
                   </CardContent>
                 </Card>
-                <Card className="text-center border-green-100">
+                <Card className="text-center border-green-100 dark:border-gray-700 bg-white dark:bg-gray-800">
                   <CardContent className="p-6">
-                    <div className="text-3xl font-bold text-green-800 mb-2">
+                    <div className="text-3xl font-bold text-green-800 dark:text-green-300 mb-2">
                       100%
                     </div>
-                    <div className="text-green-600">Quality Assured</div>
+                    <div className="text-green-600 dark:text-green-400">
+                      Quality Assured
+                    </div>
                   </CardContent>
                 </Card>
               </div>
@@ -320,13 +330,13 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-green-50">
+      <section className="py-20 bg-green-50 dark:bg-gray-800">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold text-green-800 mb-4">
+          <h2 className="text-4xl font-bold text-green-800 dark:text-green-300 mb-4">
             Ready to Partner with Chitrakoot&apos;s Leading Agricultural
             Services?
           </h2>
-          <p className="text-xl text-green-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-green-600 dark:text-green-400 mb-8 max-w-2xl mx-auto">
             Join hundreds of satisfied farmers and customers who trust Tulsi
             Agro for their agricultural and grain trading needs.
           </p>
@@ -349,7 +359,7 @@ export default function AboutPage() {
             <Button
               size="lg"
               variant="outline"
-              className="border-green-600 text-green-600 hover:bg-green-50 px-8 py-4 text-lg bg-transparent btn-hover-border active-scale"
+              className="border-green-600 text-green-600 dark:text-green-300 hover:bg-green-50 dark:hover:bg-gray-700 px-8 py-4 text-lg bg-transparent btn-hover-border active-scale"
               asChild
             >
               <a href={`tel:${phoneNumber}`}>
@@ -364,7 +374,7 @@ export default function AboutPage() {
               href="https://www.facebook.com/profile.php?id=61576971985992"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-green-600 social-hover-lift"
+              className="text-green-600 dark:text-green-400 social-hover-lift"
             >
               <Facebook className="h-8 w-8 icon-hover-glow" />
             </a>
@@ -372,7 +382,7 @@ export default function AboutPage() {
               href="https://www.instagram.com/tulsi.agro/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-green-600 social-hover-lift"
+              className="text-green-600 dark:text-green-400 social-hover-lift"
             >
               <Instagram className="h-8 w-8 icon-hover-glow" />
             </a>
@@ -380,7 +390,7 @@ export default function AboutPage() {
               href="https://www.youtube.com/@TULSIAGRO.96"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-green-600 social-hover-lift"
+              className="text-green-600 dark:text-green-400 social-hover-lift"
             >
               <Youtube className="h-8 w-8 icon-hover-glow" />
             </a>

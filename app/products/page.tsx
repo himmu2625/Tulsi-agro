@@ -233,7 +233,7 @@ export default function ProductsPage() {
       : products.filter((product) => product.category === selectedCategory)
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-green-50 to-white dark:from-gray-900 dark:to-gray-800">
       <Header currentPath="/products" />
 
       {/* Header */}
@@ -270,7 +270,7 @@ export default function ProductsPage() {
       </section>
 
       {/* Category Filter */}
-      <section className="py-6 lg:py-8 bg-white border-b border-green-100">
+      <section className="py-6 lg:py-8 bg-white dark:bg-gray-900 border-b border-green-100 dark:border-green-800">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center gap-2 lg:gap-4">
             {categories.map((category) => (
@@ -282,7 +282,7 @@ export default function ProductsPage() {
                 className={
                   selectedCategory === category
                     ? "bg-green-600 hover:bg-green-700 text-xs sm:text-sm btn-hover-glow active-scale"
-                    : "border-green-600 text-green-600 hover:bg-green-50 text-xs sm:text-sm btn-hover-border active-scale"
+                    : "border-green-600 text-green-600 dark:text-green-300 hover:bg-green-50 dark:hover:bg-gray-700 text-xs sm:text-sm btn-hover-border active-scale"
                 }
               >
                 {category}
@@ -299,7 +299,7 @@ export default function ProductsPage() {
             {filteredProducts.map((product) => (
               <Card
                 key={product.id}
-                className="overflow-hidden product-card-hover pt-0"
+                className="overflow-hidden product-card-hover pt-0 bg-white dark:bg-gray-800 border-green-100 dark:border-gray-700"
               >
                 <div className="relative h-48">
                   <Image
@@ -328,18 +328,18 @@ export default function ProductsPage() {
                 </div>
                 <CardContent className="p-6">
                   <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-xl font-semibold text-green-800">
+                    <h3 className="text-xl font-semibold text-green-800 dark:text-green-300">
                       {product.name}
                     </h3>
                     <div className="flex items-center">
                       <Star className="h-5 w-5 text-yellow-500 fill-current" />
-                      <span className="text-sm text-green-600 ml-1">
+                      <span className="text-sm text-green-600 dark:text-green-400 ml-1">
                         {product.rating}
                       </span>
                     </div>
                   </div>
 
-                  <p className="text-green-600 mb-4 text-sm">
+                  <p className="text-green-600 dark:text-green-400 mb-4 text-sm">
                     {product.description}
                   </p>
 
@@ -349,7 +349,7 @@ export default function ProductsPage() {
                         <Badge
                           key={index}
                           variant="secondary"
-                          className="text-xs bg-green-100 text-green-700"
+                          className="text-xs bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300"
                         >
                           {feature}
                         </Badge>
@@ -379,13 +379,13 @@ export default function ProductsPage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-16 lg:py-20 bg-white">
+      <section className="py-16 lg:py-20 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 lg:mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-green-800 mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold text-green-800 dark:text-green-300 mb-4">
               Why Choose Tulsi Agro?
             </h2>
-            <p className="text-lg lg:text-xl text-green-600 max-w-3xl mx-auto">
+            <p className="text-lg lg:text-xl text-green-600 dark:text-green-400 max-w-3xl mx-auto">
               Leading wholesale grain supplier in India serving restaurants,
               retailers, and food service buyers with premium quality products
               and exceptional service nationwide.
@@ -393,15 +393,15 @@ export default function ProductsPage() {
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            <Card className="border-green-100 hover:shadow-lg transition-shadow">
+            <Card className="border-green-100 dark:border-gray-700 hover:shadow-lg transition-shadow bg-white dark:bg-gray-800">
               <CardContent className="p-6 lg:p-8 text-center">
-                <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Wheat className="h-10 w-10 text-green-600" />
+                <div className="w-20 h-20 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Wheat className="h-10 w-10 text-green-600 dark:text-green-400" />
                 </div>
-                <h3 className="text-lg lg:text-xl font-semibold text-green-800 mb-3">
+                <h3 className="text-lg lg:text-xl font-semibold text-green-800 dark:text-green-300 mb-3">
                   Premium Quality
                 </h3>
-                <p className="text-green-600 text-sm lg:text-base">
+                <p className="text-green-600 dark:text-green-400 text-sm lg:text-base">
                   Every grain is carefully selected, tested, and certified to
                   meet the highest agricultural standards for both retail and
                   wholesale across India.
@@ -409,30 +409,30 @@ export default function ProductsPage() {
               </CardContent>
             </Card>
 
-            <Card className="border-green-100 hover:shadow-lg transition-shadow">
+            <Card className="border-green-100 dark:border-gray-700 hover:shadow-lg transition-shadow bg-white dark:bg-gray-800">
               <CardContent className="p-6 lg:p-8 text-center">
-                <div className="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Star className="h-10 w-10 text-yellow-600" />
+                <div className="w-20 h-20 bg-yellow-100 dark:bg-yellow-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Star className="h-10 w-10 text-yellow-600 dark:text-yellow-400" />
                 </div>
-                <h3 className="text-lg lg:text-xl font-semibold text-green-800 mb-3">
+                <h3 className="text-lg lg:text-xl font-semibold text-green-800 dark:text-green-300 mb-3">
                   Customer Satisfaction
                 </h3>
-                <p className="text-green-600 text-sm lg:text-base">
+                <p className="text-green-600 dark:text-green-400 text-sm lg:text-base">
                   Trusted by restaurants, retailers, and food service buyers
                   nationwide for consistent quality and reliable delivery.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="border-green-100 hover:shadow-lg transition-shadow">
+            <Card className="border-green-100 dark:border-gray-700 hover:shadow-lg transition-shadow bg-white dark:bg-gray-800">
               <CardContent className="p-6 lg:p-8 text-center">
-                <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <MessageCircle className="h-10 w-10 text-green-600" />
+                <div className="w-20 h-20 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <MessageCircle className="h-10 w-10 text-green-600 dark:text-green-400" />
                 </div>
-                <h3 className="text-lg lg:text-xl font-semibold text-green-800 mb-3">
+                <h3 className="text-lg lg:text-xl font-semibold text-green-800 dark:text-green-300 mb-3">
                   Expert Support
                 </h3>
-                <p className="text-green-600 text-sm lg:text-base">
+                <p className="text-green-600 dark:text-green-400 text-sm lg:text-base">
                   Dedicated support team providing guidance on product
                   selection, pricing, and agricultural consulting services.
                 </p>
@@ -443,12 +443,12 @@ export default function ProductsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-green-50">
+      <section className="py-16 bg-green-50 dark:bg-gray-800">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-green-800 mb-4">
+          <h2 className="text-3xl font-bold text-green-800 dark:text-green-300 mb-4">
             Need Custom Quantities or Special Varieties?
           </h2>
-          <p className="text-xl text-green-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-green-600 dark:text-green-400 mb-8 max-w-2xl mx-auto">
             Contact us for bulk orders, custom packaging, or specific
             agricultural products not listed above. We provide both retail and
             wholesale solutions.
@@ -472,7 +472,7 @@ export default function ProductsPage() {
             <Button
               size="lg"
               variant="outline"
-              className="border-green-600 text-green-600 hover:bg-green-50 px-8 py-4 text-lg bg-transparent btn-hover-border active-scale"
+              className="border-green-600 text-green-600 dark:text-green-300 hover:bg-green-50 dark:hover:bg-gray-700 px-8 py-4 text-lg bg-transparent btn-hover-border active-scale"
               asChild
             >
               <a href={`tel:${phoneNumber}`}>

@@ -17,7 +17,7 @@ export default function ContactPage() {
   const phoneNumber = "+91 8810593717"
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-green-50 to-white dark:from-gray-900 dark:to-gray-800">
       <Header currentPath="/contact" />
 
       {/* Hero Section */}
@@ -48,10 +48,10 @@ export default function ContactPage() {
           <div className="grid lg:grid-cols-2 gap-12">
             <div className="space-y-8">
               <div>
-                <h2 className="text-3xl font-bold text-green-800 mb-6">
+                <h2 className="text-3xl font-bold text-green-800 dark:text-green-300 mb-6">
                   Get in Touch
                 </h2>
-                <p className="text-lg text-green-600 mb-8">
+                <p className="text-lg text-green-600 dark:text-green-400 mb-8">
                   Ready to partner with India&apos;s leading agricultural
                   services provider? Contact us today for competitive wholesale
                   quotes, agricultural consulting, and reliable grain supply
@@ -60,17 +60,19 @@ export default function ContactPage() {
               </div>
 
               <div className="space-y-6">
-                <Card className="border-green-100 contact-card-hover">
+                <Card className="border-green-100 dark:border-gray-700 contact-card-hover bg-white dark:bg-gray-800">
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
-                      <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
-                        <Phone className="h-8 w-8 text-green-600 icon-hover-glow" />
+                      <div className="w-16 h-16 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center flex-shrink-0">
+                        <Phone className="h-8 w-8 text-green-600 dark:text-green-400 icon-hover-glow" />
                       </div>
                       <div>
-                        <h3 className="text-xl font-semibold text-green-800 mb-2">
+                        <h3 className="text-xl font-semibold text-green-800 dark:text-green-300 mb-2">
                           Phone
                         </h3>
-                        <p className="text-green-600 mb-2">{phoneNumber}</p>
+                        <p className="text-green-600 dark:text-green-400 mb-2">
+                          {phoneNumber}
+                        </p>
                         <Button
                           size="sm"
                           className="bg-green-600 hover:bg-green-700 btn-hover-glow active-scale"
@@ -86,17 +88,17 @@ export default function ContactPage() {
                   </CardContent>
                 </Card>
 
-                <Card className="border-green-100 contact-card-hover">
+                <Card className="border-green-100 dark:border-gray-700 contact-card-hover bg-white dark:bg-gray-800">
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
-                      <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center flex-shrink-0">
-                        <MessageCircle className="h-8 w-8 text-yellow-600 icon-hover-glow" />
+                      <div className="w-16 h-16 bg-yellow-100 dark:bg-yellow-900/30 rounded-full flex items-center justify-center flex-shrink-0">
+                        <MessageCircle className="h-8 w-8 text-yellow-600 dark:text-yellow-400 icon-hover-glow" />
                       </div>
                       <div>
-                        <h3 className="text-xl font-semibold text-green-800 mb-2">
+                        <h3 className="text-xl font-semibold text-green-800 dark:text-green-300 mb-2">
                           WhatsApp
                         </h3>
-                        <p className="text-green-600 mb-2">
+                        <p className="text-green-600 dark:text-green-400 mb-2">
                           Quick chat for instant support
                         </p>
                         <Button
@@ -118,17 +120,17 @@ export default function ContactPage() {
                   </CardContent>
                 </Card>
 
-                <Card className="border-green-100 contact-card-hover">
+                <Card className="border-green-100 dark:border-gray-700 contact-card-hover bg-white dark:bg-gray-800">
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
-                      <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
-                        <Mail className="h-8 w-8 text-green-600 icon-hover-glow" />
+                      <div className="w-16 h-16 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center flex-shrink-0">
+                        <Mail className="h-8 w-8 text-green-600 dark:text-green-400 icon-hover-glow" />
                       </div>
                       <div>
-                        <h3 className="text-xl font-semibold text-green-800 mb-2">
+                        <h3 className="text-xl font-semibold text-green-800 dark:text-green-300 mb-2">
                           Email
                         </h3>
-                        <p className="text-green-600 mb-2">
+                        <p className="text-green-600 dark:text-green-400 mb-2">
                           assisttulsiagro@gmail.com
                         </p>
                         <Button
@@ -146,17 +148,17 @@ export default function ContactPage() {
                   </CardContent>
                 </Card>
 
-                <Card className="border-green-100 contact-card-hover">
+                <Card className="border-green-100 dark:border-gray-700 contact-card-hover bg-white dark:bg-gray-800">
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
-                      <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center flex-shrink-0">
-                        <MapPin className="h-8 w-8 text-yellow-600 icon-hover-glow" />
+                      <div className="w-16 h-16 bg-yellow-100 dark:bg-yellow-900/30 rounded-full flex items-center justify-center flex-shrink-0">
+                        <MapPin className="h-8 w-8 text-yellow-600 dark:text-yellow-400 icon-hover-glow" />
                       </div>
                       <div className="flex-1">
-                        <h3 className="text-xl font-semibold text-green-800 mb-2">
+                        <h3 className="text-xl font-semibold text-green-800 dark:text-green-300 mb-2">
                           Address
                         </h3>
-                        <div className="text-green-600 space-y-1">
+                        <div className="text-green-600 dark:text-green-400 space-y-1">
                           <p>Shop No: B. 13, Karwi Galla Mandi</p>
                           <p>Chitrakoot, Uttar Pradesh - 210205</p>
                           <p>India</p>
@@ -170,28 +172,32 @@ export default function ContactPage() {
 
             <div className="space-y-8">
               <div>
-                <h2 className="text-3xl font-bold text-green-800 mb-6">
+                <h2 className="text-3xl font-bold text-green-800 dark:text-green-300 mb-6">
                   Business Hours
                 </h2>
-                <Card className="border-green-100">
+                <Card className="border-green-100 dark:border-gray-700 bg-white dark:bg-gray-800">
                   <CardContent className="p-6">
                     <div className="space-y-4">
                       <div className="flex items-center space-x-3">
-                        <Clock className="h-5 w-5 text-green-600" />
+                        <Clock className="h-5 w-5 text-green-600 dark:text-green-400" />
                         <div>
-                          <h3 className="font-semibold text-green-800">
+                          <h3 className="font-semibold text-green-800 dark:text-green-300">
                             Monday - Saturday
                           </h3>
-                          <p className="text-green-600">8:00 AM - 8:00 PM</p>
+                          <p className="text-green-600 dark:text-green-400">
+                            8:00 AM - 8:00 PM
+                          </p>
                         </div>
                       </div>
                       <div className="flex items-center space-x-3">
-                        <Clock className="h-5 w-5 text-green-600" />
+                        <Clock className="h-5 w-5 text-green-600 dark:text-green-400" />
                         <div>
-                          <h3 className="font-semibold text-green-800">
+                          <h3 className="font-semibold text-green-800 dark:text-green-300">
                             Sunday
                           </h3>
-                          <p className="text-green-600">9:00 AM - 6:00 PM</p>
+                          <p className="text-green-600 dark:text-green-400">
+                            9:00 AM - 6:00 PM
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -200,19 +206,19 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <h2 className="text-3xl font-bold text-green-800 mb-6">
+                <h2 className="text-3xl font-bold text-green-800 dark:text-green-300 mb-6">
                   Our Services
                 </h2>
                 <div className="grid gap-4">
-                  <Card className="border-green-100">
+                  <Card className="border-green-100 dark:border-gray-700 bg-white dark:bg-gray-800">
                     <CardContent className="p-4">
                       <div className="flex items-center space-x-3">
-                        <Wheat className="h-5 w-5 text-green-600" />
+                        <Wheat className="h-5 w-5 text-green-600 dark:text-green-400" />
                         <div>
-                          <h3 className="font-semibold text-green-800">
+                          <h3 className="font-semibold text-green-800 dark:text-green-300">
                             Wholesale Grain Trading
                           </h3>
-                          <p className="text-green-600 text-sm">
+                          <p className="text-green-600 dark:text-green-400 text-sm">
                             Premium quality grains at competitive prices
                           </p>
                         </div>
@@ -220,15 +226,15 @@ export default function ContactPage() {
                     </CardContent>
                   </Card>
 
-                  <Card className="border-green-100">
+                  <Card className="border-green-100 dark:border-gray-700 bg-white dark:bg-gray-800">
                     <CardContent className="p-4">
                       <div className="flex items-center space-x-3">
-                        <Truck className="h-5 w-5 text-green-600" />
+                        <Truck className="h-5 w-5 text-green-600 dark:text-green-400" />
                         <div>
-                          <h3 className="font-semibold text-green-800">
+                          <h3 className="font-semibold text-green-800 dark:text-green-300">
                             Agricultural Consulting
                           </h3>
-                          <p className="text-green-600 text-sm">
+                          <p className="text-green-600 dark:text-green-400 text-sm">
                             Expert guidance on crop selection and market trends
                           </p>
                         </div>
@@ -236,15 +242,15 @@ export default function ContactPage() {
                     </CardContent>
                   </Card>
 
-                  <Card className="border-green-100">
+                  <Card className="border-green-100 dark:border-gray-700 bg-white dark:bg-gray-800">
                     <CardContent className="p-4">
                       <div className="flex items-center space-x-3">
-                        <MessageCircle className="h-5 w-5 text-green-600" />
+                        <MessageCircle className="h-5 w-5 text-green-600 dark:text-green-400" />
                         <div>
-                          <h3 className="font-semibold text-green-800">
+                          <h3 className="font-semibold text-green-800 dark:text-green-300">
                             Customer Support
                           </h3>
-                          <p className="text-green-600 text-sm">
+                          <p className="text-green-600 dark:text-green-400 text-sm">
                             Dedicated support for all your agricultural needs
                           </p>
                         </div>
@@ -259,13 +265,13 @@ export default function ContactPage() {
       </section>
 
       {/* Enhanced Contact CTA Section */}
-      <section className="py-16 lg:py-20 bg-green-50">
+      <section className="py-16 lg:py-20 bg-green-50 dark:bg-gray-800">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-green-800 mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold text-green-800 dark:text-green-300 mb-4">
               Ready to Get Started?
             </h2>
-            <p className="text-lg lg:text-xl text-green-600 max-w-3xl mx-auto">
+            <p className="text-lg lg:text-xl text-green-600 dark:text-green-400 max-w-3xl mx-auto">
               Contact us today for competitive wholesale quotes, agricultural
               consulting, and reliable grain supply solutions. We&apos;re here
               to serve your agricultural needs.
@@ -273,15 +279,15 @@ export default function ContactPage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            <Card className="border-green-200 shadow-lg hover:shadow-xl transition-shadow contact-card-hover">
+            <Card className="border-green-200 dark:border-gray-700 shadow-lg hover:shadow-xl transition-shadow contact-card-hover bg-white dark:bg-gray-800">
               <CardContent className="p-6 lg:p-8 text-center">
-                <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Phone className="h-10 w-10 text-green-600 icon-hover-glow" />
+                <div className="w-20 h-20 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Phone className="h-10 w-10 text-green-600 dark:text-green-400 icon-hover-glow" />
                 </div>
-                <h3 className="text-xl font-semibold text-green-800 mb-3">
+                <h3 className="text-xl font-semibold text-green-800 dark:text-green-300 mb-3">
                   Call Us
                 </h3>
-                <p className="text-green-600 mb-4">
+                <p className="text-green-600 dark:text-green-400 mb-4">
                   Speak directly with our agricultural experts
                 </p>
                 <Button
@@ -297,15 +303,15 @@ export default function ContactPage() {
               </CardContent>
             </Card>
 
-            <Card className="border-green-200 shadow-lg hover:shadow-xl transition-shadow contact-card-hover">
+            <Card className="border-green-200 dark:border-gray-700 shadow-lg hover:shadow-xl transition-shadow contact-card-hover bg-white dark:bg-gray-800">
               <CardContent className="p-6 lg:p-8 text-center">
-                <div className="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <MessageCircle className="h-10 w-10 text-yellow-600 icon-hover-glow" />
+                <div className="w-20 h-20 bg-yellow-100 dark:bg-yellow-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <MessageCircle className="h-10 w-10 text-yellow-600 dark:text-yellow-400 icon-hover-glow" />
                 </div>
-                <h3 className="text-xl font-semibold text-green-800 mb-3">
+                <h3 className="text-xl font-semibold text-green-800 dark:text-green-300 mb-3">
                   WhatsApp
                 </h3>
-                <p className="text-green-600 mb-4">
+                <p className="text-green-600 dark:text-green-400 mb-4">
                   Quick chat for instant support and quotes
                 </p>
                 <Button
@@ -325,15 +331,15 @@ export default function ContactPage() {
               </CardContent>
             </Card>
 
-            <Card className="border-green-200 shadow-lg hover:shadow-xl transition-shadow contact-card-hover md:col-span-2 lg:col-span-1">
+            <Card className="border-green-200 dark:border-gray-700 shadow-lg hover:shadow-xl transition-shadow contact-card-hover md:col-span-2 lg:col-span-1 bg-white dark:bg-gray-800">
               <CardContent className="p-6 lg:p-8 text-center">
-                <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Mail className="h-10 w-10 text-green-600 icon-hover-glow" />
+                <div className="w-20 h-20 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Mail className="h-10 w-10 text-green-600 dark:text-green-400 icon-hover-glow" />
                 </div>
-                <h3 className="text-xl font-semibold text-green-800 mb-3">
+                <h3 className="text-xl font-semibold text-green-800 dark:text-green-300 mb-3">
                   Email Us
                 </h3>
-                <p className="text-green-600 mb-4">
+                <p className="text-green-600 dark:text-green-400 mb-4">
                   Send us detailed inquiries and requirements
                 </p>
                 <Button

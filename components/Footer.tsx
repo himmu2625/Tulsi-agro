@@ -6,7 +6,7 @@ export function Footer() {
   const phoneNumber = "+91 8810593717"
 
   return (
-    <footer className="relative bg-green-800 text-white py-12 overflow-hidden transition-all duration-300 hover:bg-green-800/95">
+    <footer className="relative bg-green-800 dark:bg-gray-900 text-white py-12 overflow-hidden transition-all duration-300 hover:bg-green-800/95 dark:hover:bg-gray-900/95">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -16,7 +16,7 @@ export function Footer() {
           className="object-cover opacity-20 image-hover-brightness"
           priority={false}
         />
-        <div className="absolute inset-0 bg-green-800/80"></div>
+        <div className="absolute inset-0 bg-green-800/80 dark:bg-gray-900/80"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -142,7 +142,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-green-700 mt-8 pt-8 text-center text-green-200">
+        <div className="border-t border-green-700 dark:border-gray-700 mt-8 pt-8 text-center text-green-200 dark:text-gray-300">
           <p className="text-hover-glow">
             &copy; 2025 Tulsi Agro - Premium Wholesale Grain Supplier India. All
             rights reserved.

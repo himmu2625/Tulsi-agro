@@ -5,6 +5,7 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Phone, MessageCircle, X } from "lucide-react"
 import { useState, useEffect } from "react"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 interface HeaderProps {
   currentPath: string
@@ -31,8 +32,8 @@ export function Header({ currentPath }: HeaderProps) {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? "bg-white/95 backdrop-blur-md shadow-lg border-b border-green-100"
-            : "bg-white/90 backdrop-blur-sm"
+            ? "bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-lg border-b border-green-100 dark:border-green-800"
+            : "bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm"
         }`}
       >
         <div className="container mx-auto px-4">
@@ -49,7 +50,7 @@ export function Header({ currentPath }: HeaderProps) {
                 height={32}
                 className="h-16 w-24 object-contain -my-2"
               />
-              <span className="text-xl lg:text-2xl font-bold text-green-800">
+              <span className="text-xl lg:text-2xl font-bold text-green-800 dark:text-green-300">
                 Tulsi Agro
               </span>
             </Link>
@@ -59,7 +60,9 @@ export function Header({ currentPath }: HeaderProps) {
               <Link
                 href="/"
                 className={`text-base font-medium transition-colors hover:text-green-600 nav-hover-slide focus:outline-none ${
-                  currentPath === "/" ? "nav-active" : "text-green-700"
+                  currentPath === "/"
+                    ? "nav-active"
+                    : "text-green-700 dark:text-green-300"
                 }`}
               >
                 Home
@@ -67,7 +70,9 @@ export function Header({ currentPath }: HeaderProps) {
               <Link
                 href="/products"
                 className={`text-base font-medium transition-colors hover:text-green-600 nav-hover-slide focus:outline-none ${
-                  currentPath === "/products" ? "nav-active" : "text-green-700"
+                  currentPath === "/products"
+                    ? "nav-active"
+                    : "text-green-700 dark:text-green-300"
                 }`}
               >
                 Products
@@ -75,7 +80,9 @@ export function Header({ currentPath }: HeaderProps) {
               <Link
                 href="/about"
                 className={`text-base font-medium transition-colors hover:text-green-600 nav-hover-slide focus:outline-none ${
-                  currentPath === "/about" ? "nav-active" : "text-green-700"
+                  currentPath === "/about"
+                    ? "nav-active"
+                    : "text-green-700 dark:text-green-300"
                 }`}
               >
                 About
@@ -83,7 +90,9 @@ export function Header({ currentPath }: HeaderProps) {
               <Link
                 href="/contact"
                 className={`text-base font-medium transition-colors hover:text-green-600 nav-hover-slide focus:outline-none ${
-                  currentPath === "/contact" ? "nav-active" : "text-green-700"
+                  currentPath === "/contact"
+                    ? "nav-active"
+                    : "text-green-700 dark:text-green-300"
                 }`}
               >
                 Contact
@@ -92,6 +101,7 @@ export function Header({ currentPath }: HeaderProps) {
 
             {/* Desktop CTA Buttons */}
             <div className="hidden lg:flex items-center space-x-3">
+              <ThemeToggle />
               <Button
                 size="default"
                 className="bg-green-600 hover:bg-green-700 text-white btn-hover-glow active-scale text-base font-medium focus:outline-none"
@@ -121,11 +131,12 @@ export function Header({ currentPath }: HeaderProps) {
             </div>
 
             {/* Mobile Menu Button */}
-            <div className="lg:hidden">
+            <div className="lg:hidden flex items-center space-x-2">
+              <ThemeToggle />
               <Button
                 variant="ghost"
                 size="sm"
-                className="text-green-700 hover:text-green-600 hover:bg-green-50 focus:outline-none"
+                className="text-green-700 dark:text-green-300 hover:text-green-600 hover:bg-green-50 dark:hover:bg-green-800/20 focus:outline-none"
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               >
                 {isMobileMenuOpen ? (
@@ -158,8 +169,8 @@ export function Header({ currentPath }: HeaderProps) {
             className="fixed inset-0 bg-black/50"
             onClick={() => setIsMobileMenuOpen(false)}
           />
-          <div className="fixed right-0 top-0 h-full w-80 bg-white shadow-xl transform transition-transform duration-300 ease-in-out">
-            <div className="flex items-center justify-between p-6 border-b border-green-100">
+          <div className="fixed right-0 top-0 h-full w-80 bg-white dark:bg-gray-900 shadow-xl transform transition-transform duration-300 ease-in-out">
+            <div className="flex items-center justify-between p-6 border-b border-green-100 dark:border-green-800">
               <div className="flex items-center space-x-0">
                 <Image
                   src="/Tulsi Agro logo.png"
@@ -168,7 +179,7 @@ export function Header({ currentPath }: HeaderProps) {
                   height={32}
                   className="h-10 w-20 object-contain logo-hover-pulse"
                 />
-                <span className="text-xl font-bold text-green-800 text-hover-glow">
+                <span className="text-xl font-bold text-green-800 dark:text-green-300 text-hover-glow">
                   Tulsi Agro
                 </span>
               </div>
@@ -176,7 +187,7 @@ export function Header({ currentPath }: HeaderProps) {
                 variant="ghost"
                 size="sm"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="text-green-700 hover:text-green-600"
+                className="text-green-700 dark:text-green-300 hover:text-green-600"
               >
                 <X className="h-6 w-6" />
               </Button>
@@ -186,7 +197,9 @@ export function Header({ currentPath }: HeaderProps) {
               <Link
                 href="/"
                 className={`block text-xl font-medium transition-colors hover:text-green-600 focus:outline-none ${
-                  currentPath === "/" ? "nav-active-mobile" : "text-green-700"
+                  currentPath === "/"
+                    ? "nav-active-mobile"
+                    : "text-green-700 dark:text-green-300"
                 }`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
@@ -197,7 +210,7 @@ export function Header({ currentPath }: HeaderProps) {
                 className={`block text-xl font-medium transition-colors hover:text-green-600 focus:outline-none ${
                   currentPath === "/products"
                     ? "nav-active-mobile"
-                    : "text-green-700"
+                    : "text-green-700 dark:text-green-300"
                 }`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
@@ -208,7 +221,7 @@ export function Header({ currentPath }: HeaderProps) {
                 className={`block text-xl font-medium transition-colors hover:text-green-600 focus:outline-none ${
                   currentPath === "/about"
                     ? "nav-active-mobile"
-                    : "text-green-700"
+                    : "text-green-700 dark:text-green-300"
                 }`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
@@ -219,7 +232,7 @@ export function Header({ currentPath }: HeaderProps) {
                 className={`block text-xl font-medium transition-colors hover:text-green-600 focus:outline-none ${
                   currentPath === "/contact"
                     ? "nav-active-mobile"
-                    : "text-green-700"
+                    : "text-green-700 dark:text-green-300"
                 }`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
@@ -227,7 +240,7 @@ export function Header({ currentPath }: HeaderProps) {
               </Link>
             </nav>
 
-            <div className="p-6 border-t border-green-100 space-y-3">
+            <div className="p-6 border-t border-green-100 dark:border-green-800 space-y-3">
               <Button
                 className="w-full bg-green-600 hover:bg-green-700 text-white btn-hover-glow active-scale text-base font-medium focus:outline-none"
                 asChild
@@ -254,8 +267,8 @@ export function Header({ currentPath }: HeaderProps) {
               </Button>
             </div>
 
-            <div className="p-6 border-t border-green-100">
-              <div className="flex space-x-4 justify-center">
+            <div className="p-6 border-t border-green-100 dark:border-green-800">
+              <div className="flex space-x-4 justify-center items-center">
                 <a
                   href="https://www.facebook.com/profile.php?id=61576971985992"
                   target="_blank"
