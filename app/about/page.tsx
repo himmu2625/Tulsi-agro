@@ -107,9 +107,13 @@ export default function AboutPage() {
                 placeholder="blur"
                 blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
               />
-              <div className="absolute -bottom-6 -left-6 bg-yellow-400 text-green-800 p-6 rounded-xl shadow-lg">
-                <div className="text-3xl font-bold">10+</div>
-                <div className="font-semibold">Years of Excellence</div>
+              <div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 bg-yellow-400 text-green-800 p-3 sm:p-6 rounded-lg sm:rounded-xl shadow-lg">
+                <div className="text-xl sm:text-2xl lg:text-3xl font-bold">
+                  10+
+                </div>
+                <div className="text-xs sm:text-sm lg:text-base font-semibold">
+                  Years of Excellence
+                </div>
               </div>
             </div>
           </div>
