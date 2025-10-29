@@ -1,3 +1,4 @@
+import { Metadata } from "next"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -16,6 +17,26 @@ import {
 } from "lucide-react"
 import { Header } from "@/components/Header"
 import { Footer } from "@/components/Footer"
+
+export const metadata: Metadata = {
+  title: "About Tulsi Agro | Our Story, Mission, and Values in Chitrakoot",
+  description:
+    "Learn about Tulsi Agro, a leading agricultural services provider in Chitrakoot, Uttar Pradesh. Discover our story, mission, and commitment to quality grain trading and farmer empowerment.",
+  alternates: {
+    canonical: "/about",
+  },
+  openGraph: {
+    title: "About Tulsi Agro | Our Story, Mission, and Values in Chitrakoot",
+    description:
+      "Learn about Tulsi Agro, a leading agricultural services provider in Chitrakoot, Uttar Pradesh. Discover our story, mission, and commitment to quality grain trading and farmer empowerment.",
+    url: "/about",
+  },
+  twitter: {
+    title: "About Tulsi Agro | Our Story, Mission, and Values in Chitrakoot",
+    description:
+      "Learn about Tulsi Agro, a leading agricultural services provider in Chitrakoot, Uttar Pradesh. Discover our story, mission, and commitment to quality grain trading and farmer empowerment.",
+  },
+}
 
 export default function AboutPage() {
   const whatsappNumber = "918810593717"

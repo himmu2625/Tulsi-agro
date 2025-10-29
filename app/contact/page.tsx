@@ -1,3 +1,4 @@
+import { Metadata } from "next"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import {
@@ -11,6 +12,26 @@ import {
 } from "lucide-react"
 import { Header } from "@/components/Header"
 import { Footer } from "@/components/Footer"
+
+export const metadata: Metadata = {
+  title: "Contact Tulsi Agro | Phone, WhatsApp, and Address in Chitrakoot",
+  description:
+    "Contact Tulsi Agro for wholesale grain inquiries, agricultural consulting, and support. Find our phone number, WhatsApp, email, and address in Chitrakoot, Uttar Pradesh.",
+  alternates: {
+    canonical: "/contact",
+  },
+  openGraph: {
+    title: "Contact Tulsi Agro | Phone, WhatsApp, and Address in Chitrakoot",
+    description:
+      "Contact Tulsi Agro for wholesale grain inquiries, agricultural consulting, and support. Find our phone number, WhatsApp, email, and address in Chitrakoot, Uttar Pradesh.",
+    url: "/contact",
+  },
+  twitter: {
+    title: "Contact Tulsi Agro | Phone, WhatsApp, and Address in Chitrakoot",
+    description:
+      "Contact Tulsi Agro for wholesale grain inquiries, agricultural consulting, and support. Find our phone number, WhatsApp, email, and address in Chitrakoot, Uttar Pradesh.",
+  },
+}
 
 export default function ContactPage() {
   const whatsappNumber = "918810593717"
