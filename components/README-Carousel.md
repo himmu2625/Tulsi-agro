@@ -257,4 +257,5 @@ For questions or issues with the carousel component, please refer to the main pr
 
 ---
 
-**Note**: This carousel component is specifically designed for agricultural websites and includes pre-configured content for grain trading, farming, and agricultural services. Customize the content and styling to match your specific needs.
+**Note**: This carousel component is specifically designed for agricultural websites and includes pre-configured content for grain trading, farming, and agricultural services. Customize the content and styling to match your specific needs
+
