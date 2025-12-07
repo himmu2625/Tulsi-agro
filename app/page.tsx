@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
@@ -17,6 +18,12 @@ import {
 import { Header } from "@/components/Header"
 import { Footer } from "@/components/Footer"
 import { AdvancedImageCarousel } from "@/components/ImageCarousel"
+import { TestimonialCarousel } from "@/components/TestimonialCarousel"
+
+export const metadata: Metadata = {
+  title: "Tulsi Agro - Wholesale Grains & Agricultural Services in India",
+  description: "Tulsi Agro is a leading wholesale grain supplier and agricultural services provider in India. We offer premium basmati rice, wheat, pulses, and expert agricultural consulting. Contact us for competitive pricing and nationwide delivery.",
+};
 
 export default function HomePage() {
   const whatsappNumber = "918810593717"
@@ -454,6 +461,8 @@ export default function HomePage() {
         </div>
       </section>
 
+      <TestimonialCarousel />
+
       {/* CTA Section */}
       <section className="py-16 lg:py-20 bg-green-50 dark:bg-gray-800">
         <div className="container mx-auto px-4 text-center">
@@ -498,6 +507,7 @@ export default function HomePage() {
               href="https://www.facebook.com/profile.php?id=61576971985992"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visit our Facebook page"
               className="text-green-600 dark:text-green-400 social-hover-lift"
             >
               <Facebook className="h-8 w-8 icon-hover-glow" />
@@ -506,6 +516,7 @@ export default function HomePage() {
               href="https://www.instagram.com/tulsi.agro/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Follow us on Instagram"
               className="text-green-600 dark:text-green-400 social-hover-lift"
             >
               <Instagram className="h-8 w-8 icon-hover-glow" />
@@ -514,6 +525,7 @@ export default function HomePage() {
               href="https://www.youtube.com/@TULSIAGRO.96"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Subscribe to our YouTube channel"
               className="text-green-600 dark:text-green-400 social-hover-lift"
             >
               <Youtube className="h-8 w-8 icon-hover-glow" />

@@ -44,21 +44,31 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://tulsiagro.com",
+    url: "https://tulsigroup.org",
     title:
       "Tulsi Agro - Premium Wholesale Grains & Agricultural Services | India",
     description:
       "Leading wholesale grain supplier in India. Premium basmati rice, wheat, pulses & agricultural services trusted by businesses nationwide.",
     siteName: "Tulsi Agro",
+    images: [
+      {
+        url: "https://tulsigroup.org/Tulsi%20Agro%20logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Tulsi Agro Logo",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Tulsi Agro - Premium Wholesale Grains & Agricultural Services",
     description:
       "Leading wholesale grain supplier in India. Premium quality, competitive prices, nationwide delivery.",
+    creator: "@tulsi_agro",
+    site: "@tulsi_agro",
   },
   alternates: {
-    canonical: "https://tulsiagro.com",
+    canonical: "https://tulsigroup.org",
   },
 }
 
@@ -68,7 +78,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* Structured data for Organization schema */}
@@ -77,24 +87,56 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "Tulsi Agro",
-              description:
-                "Premium wholesale grains supplier offering wheat and rice",
-              url: "https://tulsiagro.com",
-              logo: "https://tulsiagro.com/Tulsi Agro logo.png",
-              contactPoint: {
-                "@type": "ContactPoint",
-                telephone: "+91-8810593717",
-                contactType: "Sales",
-                areaServed: "IN",
-                availableLanguage: ["en", "hi"],
+              "@type": "LocalBusiness",
+              "name": "Tulsi Agro",
+              "description":
+                "Premium wholesale grains supplier and agricultural services provider in Chitrakoot, India. Specializing in basmati rice, wheat, pulses, and oilseeds.",
+              "url": "https://tulsigroup.org",
+              "logo": "https://tulsigroup.org/Tulsi Agro logo.png",
+              "image": "https://tulsigroup.org/Tulsi Agro logo.png",
+              "telephone": "+91-8810593717",
+              "email": "assisttulsiagro@gmail.com",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Shop No: B. 13, Karwi Galla Mandi",
+                "addressLocality": "Chitrakoot",
+                "addressRegion": "Uttar Pradesh",
+                "postalCode": "210205",
+                "addressCountry": "IN"
               },
-              sameAs: [
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday"
+                  ],
+                  "opens": "08:00",
+                  "closes": "20:00"
+                },
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": "Sunday",
+                  "opens": "09:00",
+                  "closes": "18:00"
+                }
+              ],
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+91-8810593717",
+                "contactType": "Sales",
+                "areaServed": "IN",
+                "availableLanguage": ["en", "hi"]
+              },
+              "sameAs": [
                 "https://www.facebook.com/profile.php?id=61576971985992",
                 "https://www.instagram.com/tulsi.agro/",
-                "https://www.youtube.com/@TULSIAGRO.96",
-              ],
+                "https://www.youtube.com/@TULSIAGRO.96"
+              ]
             }),
           }}
         />

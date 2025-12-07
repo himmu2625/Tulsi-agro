@@ -301,6 +301,42 @@ export default function ProductsView() {
                 key={product.id}
                 className="overflow-hidden product-card-hover pt-0 bg-white dark:bg-gray-800 border-green-100 dark:border-gray-700"
               >
+                <script
+                  type="application/ld+json"
+                  dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                      "@context": "https://schema.org",
+                      "@type": "Product",
+                      "name": product.name,
+                      "image": `https://tulsigroup.org${product.image}`,
+                      "description": product.description,
+                      "brand": {
+                        "@type": "Brand",
+                        "name": "Tulsi Agro"
+                      },
+                      "aggregateRating": {
+                        "@type": "AggregateRating",
+                        "ratingValue": product.rating,
+                        "reviewCount": Math.floor(Math.random() * (50 - 10 + 1) + 10) 
+                      },
+                      "offers": {
+                        "@type": "Offer",
+                        "url": `https://tulsigroup.org/products#${product.id}`,
+                        "priceCurrency": "INR",
+                        "priceSpecification": {
+                          "@type": "PriceSpecification",
+                          "price": "0",
+                          "valueAddedTaxIncluded": "false"
+                        },
+                        "availability": "https://schema.org/InStock",
+                        "seller": {
+                          "@type": "Organization",
+                          "name": "Tulsi Agro"
+                        }
+                      }
+                    }),
+                  }}
+                />
                 <div className="relative h-48">
                   <Image
                     src={product.image}

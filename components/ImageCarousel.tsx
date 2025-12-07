@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect, useCallback } from "react"
+import Image from "next/image"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
@@ -134,13 +135,15 @@ export function ImageCarousel({
                 : "opacity-0 scale-105"
             }`}
           >
-            {/* Background Image with Parallax Effect */}
-            <div
-              className="absolute inset-0 bg-cover bg-center bg-no-repeat transform transition-transform duration-1000"
-              style={{
-                backgroundImage: `url(${slide.image})`,
-                transform: index === currentIndex ? "scale(1.1)" : "scale(1)",
-              }}
+            <Image
+              src={slide.image}
+              alt={`${slide.title} - ${slide.subtitle}`}
+              fill
+              className="object-cover"
+              priority={index === 0}
+              loading={index === 0 ? "eager" : "lazy"}
+              quality={90}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
             />
 
             {/* Gradient Overlay for Text Readability */}
@@ -309,27 +312,26 @@ export function AdvancedImageCarousel({
       {/* Main Carousel Container */}
       <div className="relative w-full h-full">
         {carouselData.map((slide, index) => (
-          <motion.div
-            key={slide.id}
-            initial={{ opacity: 0 }}
-            animate={{
-              opacity: index === currentIndex ? 1 : 0,
-              scale: index === currentIndex ? 1 : 1.05,
-            }}
-            transition={{ duration: 0.7, ease: "easeInOut" }}
-            className="absolute inset-0"
-          >
-            {/* Background Image with Parallax Effect */}
             <motion.div
-              className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-              style={{
-                backgroundImage: `url(${slide.image})`,
-              }}
+              key={slide.id}
+              initial={{ opacity: 0 }}
               animate={{
-                scale: index === currentIndex ? 1.1 : 1,
+                opacity: index === currentIndex ? 1 : 0,
+                scale: index === currentIndex ? 1 : 1.05,
               }}
-              transition={{ duration: 10, ease: "linear" }}
-            />
+              transition={{ duration: 0.7, ease: "easeInOut" }}
+              className="absolute inset-0"
+            >
+              <Image
+                src={slide.image}
+                alt={`${slide.title} - ${slide.subtitle}`}
+                fill
+                className="object-cover"
+                priority={index === 0}
+                loading={index === 0 ? "eager" : "lazy"}
+                quality={90}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+              />
 
             {/* Gradient Overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />

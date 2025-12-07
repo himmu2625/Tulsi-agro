@@ -23,18 +23,29 @@ export const metadata: Metadata = {
   description:
     "Learn about Tulsi Agro, a leading agricultural services provider in Chitrakoot, Uttar Pradesh. Discover our story, mission, and commitment to quality grain trading and farmer empowerment.",
   alternates: {
-    canonical: "/about",
+    canonical: "https://tulsigroup.org/about",
   },
   openGraph: {
     title: "About Tulsi Agro | Our Story, Mission, and Values in Chitrakoot",
     description:
       "Learn about Tulsi Agro, a leading agricultural services provider in Chitrakoot, Uttar Pradesh. Discover our story, mission, and commitment to quality grain trading and farmer empowerment.",
-    url: "/about",
+    url: "https://tulsigroup.org/about",
+    images: [
+      {
+        url: "https://tulsigroup.org/About%20section%20logo.png",
+        width: 600,
+        height: 500,
+        alt: "Tulsi Agro - Our Story",
+      },
+    ],
   },
   twitter: {
+    card: "summary_large_image",
     title: "About Tulsi Agro | Our Story, Mission, and Values in Chitrakoot",
     description:
       "Learn about Tulsi Agro, a leading agricultural services provider in Chitrakoot, Uttar Pradesh. Discover our story, mission, and commitment to quality grain trading and farmer empowerment.",
+    creator: "@tulsi_agro",
+    site: "@tulsi_agro",
   },
 }
 
@@ -395,6 +406,7 @@ export default function AboutPage() {
               href="https://www.facebook.com/profile.php?id=61576971985992"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visit our Facebook page"
               className="text-green-600 dark:text-green-400 social-hover-lift"
             >
               <Facebook className="h-8 w-8 icon-hover-glow" />
@@ -403,6 +415,7 @@ export default function AboutPage() {
               href="https://www.instagram.com/tulsi.agro/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Follow us on Instagram"
               className="text-green-600 dark:text-green-400 social-hover-lift"
             >
               <Instagram className="h-8 w-8 icon-hover-glow" />
@@ -411,6 +424,7 @@ export default function AboutPage() {
               href="https://www.youtube.com/@TULSIAGRO.96"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Subscribe to our YouTube channel"
               className="text-green-600 dark:text-green-400 social-hover-lift"
             >
               <Youtube className="h-8 w-8 icon-hover-glow" />

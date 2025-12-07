@@ -18,18 +18,29 @@ export const metadata: Metadata = {
   description:
     "Contact Tulsi Agro for wholesale grain inquiries, agricultural consulting, and support. Find our phone number, WhatsApp, email, and address in Chitrakoot, Uttar Pradesh.",
   alternates: {
-    canonical: "/contact",
+    canonical: "https://tulsigroup.org/contact",
   },
   openGraph: {
     title: "Contact Tulsi Agro | Phone, WhatsApp, and Address in Chitrakoot",
     description:
       "Contact Tulsi Agro for wholesale grain inquiries, agricultural consulting, and support. Find our phone number, WhatsApp, email, and address in Chitrakoot, Uttar Pradesh.",
-    url: "/contact",
+    url: "https://tulsigroup.org/contact",
+    images: [
+      {
+        url: "https://tulsigroup.org/TULSI%20AGRO.png",
+        width: 1200,
+        height: 630,
+        alt: "Contact Tulsi Agro",
+      },
+    ],
   },
   twitter: {
+    card: "summary_large_image",
     title: "Contact Tulsi Agro | Phone, WhatsApp, and Address in Chitrakoot",
     description:
       "Contact Tulsi Agro for wholesale grain inquiries, agricultural consulting, and support. Find our phone number, WhatsApp, email, and address in Chitrakoot, Uttar Pradesh.",
+    creator: "@tulsi_agro",
+    site: "@tulsi_agro",
   },
 }
 
